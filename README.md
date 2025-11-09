@@ -9,6 +9,16 @@ Chips consist of hundreds of millions of logic gates and transistors. Although t
 
 ![image](VLSI_poster.png)
 
+##
+
+## Multi-Agent Reinforcement Learning in Overcooked
+
+![image](timelapse.png)
+
+- Implemented Multi-Agent Proximal Policy Optimization (MAPPO) from scratch using centralized training with decentralized execution (CTDE) paradigm, achieving 7-8 soups/episode on coordinated kitchen layouts through emergent role specialization and implicit coordination behaviors.
+- Integrated Intrinsic Curiosity Module (ICM) for exploration in sparse reward environments, analyzing credit assignment and coordination dynamics through per-agent value estimation and exploration-exploitation transitions.
+- Conducted rigorous experimental evaluation across 3 layouts with 2000+ training episodes per environment, identifying spatial complexity and exploration insufficiency as key scalability challenges in multi-agent coordination.
+
 
 ## Systems Programming
 ### Distributed MapReduce Framework
