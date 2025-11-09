@@ -9,8 +9,6 @@ Chips consist of hundreds of millions of logic gates and transistors. Although t
 
 ![image](VLSI_poster.png)
 
-##
-
 ## Multi-Agent Reinforcement Learning in Overcooked
 
 ![image](timelapse.png)
