@@ -81,7 +81,7 @@ export default function ProjectsSection() {
               className="bg-gray-800/50 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-colors duration-300 overflow-hidden flex flex-col"
             >
               {project.image && (
-                <div className="relative w-full h-48 bg-gray-900">
+                <div className="relative w-full bg-gray-900" style={{ aspectRatio: '16/9' }}>
                   <Image
                     src={project.image}
                     alt={project.title}
