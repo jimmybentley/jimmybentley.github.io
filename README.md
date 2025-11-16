@@ -89,7 +89,6 @@ The site is configured for static export (`output: 'export'` in `next.config.mjs
 - **Colors:** Edit `tailwind.config.ts` to change the color scheme
 - **Content:** Update the data arrays in each component file
 - **Fonts:** Modify the Inter font import in `app/layout.tsx`
-- **Resume:** Add your resume PDF as `/public/James_Bentley_Resume.pdf`
 
 ## License
 
