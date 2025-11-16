@@ -81,13 +81,13 @@ export default function ProjectsSection() {
               className="bg-gray-800/50 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-colors duration-300 overflow-hidden flex flex-col"
             >
               {project.image && (
-                <div className="bg-gray-900 p-4">
+                <div className="bg-gray-900 p-4 flex items-center justify-center" style={{ maxHeight: '500px' }}>
                   <Image
                     src={project.image}
                     alt={project.title}
                     width={800}
                     height={600}
-                    className="w-full h-auto"
+                    className="w-full h-auto max-h-full object-contain"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                 </div>
