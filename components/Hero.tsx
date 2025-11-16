@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -9,6 +11,18 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-6">
+          <div className="flex justify-center mb-6">
+            <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-blue-500/30 glow">
+              <Image
+                src="https://avatars.githubusercontent.com/u/97258445?v=4"
+                alt="James Bentley"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
+
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white tracking-tight">
             James Bentley
           </h1>
