@@ -10,7 +10,7 @@ export default function AboutSection() {
             cloud infrastructure, and large-scale ML training. Currently pursuing my M.S. in Computer Science
             at Georgia Institute of Technology (expected May 2026), I previously earned my B.S. in Data Science
             from UC San Diego. My work centers on building scalable infrastructure that powers machine learning
-            at scale&mdash;from optimizing distributed training pipelines to designing cloud-native architectures
+            at scale, from optimizing distributed training pipelines to designing cloud-native architectures
             that handle thousands of microservices. I&apos;m particularly interested in the intersection of
             high-performance computing and ML infrastructure, where system efficiency directly impacts model
             training outcomes.
