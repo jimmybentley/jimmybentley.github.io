@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-6">
           <div className="flex justify-center mb-6">
-            <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-blue-500/30 glow">
+            <div className="relative w-48 h-48 sm:w-60 sm:h-60 rounded-full overflow-hidden border-4 border-blue-500/30 glow">
               <Image
                 src="https://avatars.githubusercontent.com/u/97258445?v=4"
                 alt="James Bentley"
@@ -28,7 +28,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl sm:text-2xl text-blue-400 font-medium">
-            Software Engineer &ndash; Distributed Systems & Machine Learning
+            Software Engineer | Distributed Systems & Machine Learning
           </p>
 
           <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
