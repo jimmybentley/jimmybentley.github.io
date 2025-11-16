@@ -53,6 +53,19 @@ const projects: Project[] = [
     ],
     tags: ["Dask", "PySpark", "Kubernetes", "AWS EC2", "Python"],
   },
+  {
+    title: "Distributed MapReduce Framework",
+    description:
+      "A from-scratch distributed MapReduce system in C++ using asynchronous gRPC and master-worker architecture for parallel job execution.",
+    bullets: [
+      "Built asynchronous gRPC client using CompletionQueues and BaseCall inheritance hierarchy for per-RPC state management",
+      "Implemented master-worker architecture with map-task scheduling, reduce-task coordination, and fault-tolerant task reassignment",
+      "Designed concurrency-safe work queue and multithreaded worker execution pipeline for parallel shard processing",
+      "Integrated Protobuf for type-safe RPC communication with pluggable Map/Reduce interfaces",
+      "Added lifecycle tracing and debugging instrumentation to analyze bottlenecks and worker throughput",
+    ],
+    tags: ["C++", "gRPC", "Multithreading", "Protobuf", "Linux"],
+  },
 ];
 
 export default function ProjectsSection() {
