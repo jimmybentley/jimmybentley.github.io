@@ -62,7 +62,6 @@ const projects: Project[] = [
       "Implemented master-worker architecture with map-task scheduling, reduce-task coordination, and fault-tolerant task reassignment",
       "Designed concurrency-safe work queue and multithreaded worker execution pipeline for parallel shard processing",
       "Integrated Protobuf for type-safe RPC communication with pluggable Map/Reduce interfaces",
-      "Added lifecycle tracing and debugging instrumentation to analyze bottlenecks and worker throughput",
     ],
     tags: ["C++", "gRPC", "Multithreading", "Protobuf", "Linux"],
   },
