@@ -9,6 +9,7 @@ interface Project {
   websiteLink?: string;
   codeLink?: string;
   reportLink?: string;
+  videoLink?: string;
 }
 
 const projects: Project[] = [
@@ -24,6 +25,19 @@ const projects: Project[] = [
     ],
     tags: ["PyTorch", "MAPPO", "Multi-Agent RL", "Python"],
     image: "/timelapse.png",
+  },
+  {
+    title: "Autonomous Racing with AWS DeepRacer",
+    description:
+      "PPO-based autonomous racing agent that learns to navigate tracks using stereo camera images and LiDAR.",
+    bullets: [
+      "Built PPO-based racing agent for AWS DeepRacer simulator achieving consistent lap completion across tracks of varying complexity",
+      "Designed dual-encoder neural network with separate convolutional pathways for visual and LiDAR feature extraction",
+      "Implemented two-phase transfer learning: baseline training on simple tracks followed by fine-tuning on complex environments",
+      "Demonstrated learned visual representations generalize across environments while identifying transfer learning boundaries",
+    ],
+    tags: ["PyTorch", "PPO", "Computer Vision", "LiDAR", "AWS DeepRacer", "Transfer Learning"],
+    // Add your video URL here: videoLink: "https://your-video-url.com",
   },
   {
     title: "Graph Batching Method for Integrated Circuits",
@@ -122,8 +136,37 @@ export default function ProjectsSection() {
                   ))}
                 </div>
 
-                {(project.websiteLink || project.codeLink || project.reportLink) && (
+                {(project.websiteLink || project.codeLink || project.reportLink || project.videoLink) && (
                   <div className="flex flex-wrap gap-3">
+                    {project.videoLink && (
+                      <a
+                        href={project.videoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white text-sm font-medium rounded-lg transition-colors"
+                      >
+                        <svg
+                          className="w-4 h-4 mr-2"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                          />
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        Video Demo
+                      </a>
+                    )}
                     {project.websiteLink && (
                       <a
                         href={project.websiteLink}
