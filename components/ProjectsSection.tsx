@@ -55,6 +55,18 @@ const projects: Project[] = [
     videoLink: "https://github.com/user-attachments/assets/8ee6346d-b066-4251-8fec-091dcdc8dc4e",
   },
   {
+    title: "3D Reconstruction from Images",
+    description:
+      "Multi-view 3D reconstruction using photometric stereo and epipolar geometry for depth estimation and feature matching.",
+    bullets: [
+      "Estimated surface depth maps from external light sources using photometric stereo with Horn integration technique to predict meshes of human faces",
+      "Implemented 8-point algorithm to derive epipolar geometry and match image features across views",
+      "Maintained object point continuity and preserved perspective across multiple camera views",
+    ],
+    tags: ["Computer Vision", "Python", "OpenCV", "Photometric Stereo", "Epipolar Geometry"],
+    image: "/epipolar_geometry.png",  // Add your image to public/ folder as epipolar_geometry.png
+  },
+  {
     title: "Large-Scale ETL of Amazon Datasets",
     description:
       "Distributed cloud computing infrastructure for processing and analyzing massive e-commerce datasets.",
