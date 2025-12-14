@@ -27,18 +27,6 @@ const projects: Project[] = [
     image: "/timelapse.png",
   },
   {
-    title: "Autonomous Racing with AWS DeepRacer",
-    description:
-      "PPO-based autonomous racing agent that learns to navigate tracks using stereo camera images and LiDAR.",
-    bullets: [
-      "Built PPO-based racing agent for AWS DeepRacer simulator achieving consistent lap completion across tracks of varying complexity",
-      "Designed dual-encoder neural network with separate convolutional pathways for visual and LiDAR feature extraction",
-      "Implemented two-phase transfer learning with baseline training on simple tracks followed by fine-tuning on complex environments",
-    ],
-    tags: ["PyTorch", "PPO", "Computer Vision", "LiDAR", "AWS DeepRacer", "Transfer Learning"],
-    videoLink: "https://github.com/user-attachments/assets/8ee6346d-b066-4251-8fec-091dcdc8dc4e",
-  },
-  {
     title: "Graph Batching Method for Integrated Circuits",
     description:
       "Novel batching strategy for training GNNs on large-scale VLSI circuit graphs while maintaining model accuracy.",
@@ -53,6 +41,18 @@ const projects: Project[] = [
     websiteLink: "https://spencerrazor.github.io/walking-gcn/",
     reportLink: "https://drive.google.com/file/d/1ouMfxmZm9oltgq5J7yZiXt1gXl7XL1-v/view?usp=sharing",
     codeLink: "https://github.com/UCSD-Qualcomm-B07-Group-2/Biased-Batch-Learning-Strategy",
+  },
+  {
+    title: "Autonomous Racing with AWS DeepRacer",
+    description:
+      "PPO-based autonomous racing agent that learns to navigate tracks using stereo camera images and LiDAR.",
+    bullets: [
+      "Built PPO-based racing agent for AWS DeepRacer simulator achieving consistent lap completion across tracks of varying complexity",
+      "Designed dual-encoder neural network with separate convolutional pathways for visual and LiDAR feature extraction",
+      "Implemented two-phase transfer learning with baseline training on simple tracks followed by fine-tuning on complex environments",
+    ],
+    tags: ["PyTorch", "PPO", "Computer Vision", "LiDAR", "AWS DeepRacer", "Transfer Learning"],
+    videoLink: "https://github.com/user-attachments/assets/8ee6346d-b066-4251-8fec-091dcdc8dc4e",
   },
   {
     title: "Large-Scale ETL of Amazon Datasets",
