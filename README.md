@@ -93,3 +93,8 @@ The site is configured for static export (`output: 'export'` in `next.config.mjs
 ## License
 
 MIT License
+
+
+
+https://github.com/user-attachments/assets/8ee6346d-b066-4251-8fec-091dcdc8dc4e
+
