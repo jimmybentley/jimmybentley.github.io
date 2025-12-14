@@ -108,7 +108,10 @@ export default function ProjectsSection() {
                 <div className="bg-gray-900 p-4 flex items-center justify-center" style={{ maxHeight: '500px' }}>
                   <video
                     src={project.videoLink}
-                    controls
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     className="w-full h-auto max-h-full"
                     style={{ maxHeight: '500px' }}
                   >
