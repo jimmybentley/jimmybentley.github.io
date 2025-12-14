@@ -33,8 +33,7 @@ const projects: Project[] = [
     bullets: [
       "Built PPO-based racing agent for AWS DeepRacer simulator achieving consistent lap completion across tracks of varying complexity",
       "Designed dual-encoder neural network with separate convolutional pathways for visual and LiDAR feature extraction",
-      "Implemented two-phase transfer learning: baseline training on simple tracks followed by fine-tuning on complex environments",
-      "Demonstrated learned visual representations generalize across environments while identifying transfer learning boundaries",
+      "Implemented two-phase transfer learning with baseline training on simple tracks followed by fine-tuning on complex environments",
     ],
     tags: ["PyTorch", "PPO", "Computer Vision", "LiDAR", "AWS DeepRacer", "Transfer Learning"],
     videoLink: "https://github.com/user-attachments/assets/8ee6346d-b066-4251-8fec-091dcdc8dc4e",
@@ -76,7 +75,6 @@ const projects: Project[] = [
       "Implemented master-worker architecture with map-task scheduling, reduce-task coordination, and fault-tolerant task reassignment",
       "Designed concurrency-safe work queue and multithreaded worker execution pipeline for parallel shard processing",
       "Integrated Protobuf for type-safe RPC communication with pluggable Map/Reduce interfaces",
-      "Added lifecycle tracing and debugging instrumentation to analyze bottlenecks and worker throughput",
     ],
     tags: ["C++", "gRPC", "Multithreading", "Protobuf", "Linux"],
   },
