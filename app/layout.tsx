@@ -10,6 +10,16 @@ export const metadata: Metadata = {
     title: "James Bentley | Software Engineer",
     description: "Software Engineer specializing in Distributed Systems and Machine Learning Infrastructure",
     type: "website",
+    url: "https://jimmybentley.github.io",
+    siteName: "James Bentley Portfolio",
+    images: [
+      {
+        url: "https://jimmybentley.github.io/VLSI_poster.png",
+        width: 1200,
+        height: 630,
+        alt: "James Bentley - Software Engineer Portfolio",
+      },
+    ],
   },
 };
 
