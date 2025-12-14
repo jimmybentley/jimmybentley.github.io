@@ -92,7 +92,18 @@ export default function ProjectsSection() {
               key={index}
               className="bg-gray-800/50 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-colors duration-300 overflow-hidden flex flex-col"
             >
-              {project.image && (
+              {project.videoLink ? (
+                <div className="bg-gray-900 p-4 flex items-center justify-center" style={{ maxHeight: '500px' }}>
+                  <video
+                    src={project.videoLink}
+                    controls
+                    className="w-full h-auto max-h-full"
+                    style={{ maxHeight: '500px' }}
+                  >
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              ) : project.image ? (
                 <div className="bg-gray-900 p-4 flex items-center justify-center" style={{ maxHeight: '500px' }}>
                   <Image
                     src={project.image}
@@ -103,7 +114,7 @@ export default function ProjectsSection() {
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                 </div>
-              )}
+              ) : null}
 
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-semibold text-white mb-2">
@@ -134,37 +145,8 @@ export default function ProjectsSection() {
                   ))}
                 </div>
 
-                {(project.websiteLink || project.codeLink || project.reportLink || project.videoLink) && (
+                {(project.websiteLink || project.codeLink || project.reportLink) && (
                   <div className="flex flex-wrap gap-3">
-                    {project.videoLink && (
-                      <a
-                        href={project.videoLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white text-sm font-medium rounded-lg transition-colors"
-                      >
-                        <svg
-                          className="w-4 h-4 mr-2"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                          />
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
-                        </svg>
-                        Video Demo
-                      </a>
-                    )}
                     {project.websiteLink && (
                       <a
                         href={project.websiteLink}
