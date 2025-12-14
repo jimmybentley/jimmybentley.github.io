@@ -37,7 +37,7 @@ const projects: Project[] = [
       "Demonstrated learned visual representations generalize across environments while identifying transfer learning boundaries",
     ],
     tags: ["PyTorch", "PPO", "Computer Vision", "LiDAR", "AWS DeepRacer", "Transfer Learning"],
-    // Add your video URL here: videoLink: "https://your-video-url.com",
+    videoLink: "https://github.com/user-attachments/assets/8ee6346d-b066-4251-8fec-091dcdc8dc4e",
   },
   {
     title: "Graph Batching Method for Integrated Circuits",
