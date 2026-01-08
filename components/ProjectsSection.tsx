@@ -38,7 +38,6 @@ const projects: Project[] = [
     ],
     tags: ["PyTorch", "GNN", "Graph Neural Networks", "VLSI", "Python"],
     image: "/VLSI_poster.png",
-    websiteLink: "https://spencerrazor.github.io/walking-gcn/",
     reportLink: "https://drive.google.com/file/d/1ouMfxmZm9oltgq5J7yZiXt1gXl7XL1-v/view?usp=sharing",
     codeLink: "https://github.com/UCSD-Qualcomm-B07-Group-2/Biased-Batch-Learning-Strategy",
   },
